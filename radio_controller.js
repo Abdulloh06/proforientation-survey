@@ -231,21 +231,23 @@ document.addEventListener('DOMContentLoaded', function () {
             for(let i = 0; i < answersArr.length; i++) {
                 if(answersArr[i].includes(event.target.name.toString())) {
                     console.log(answersArr);
-                    console.log(answersArr[i].split('|')[1].toString().split(',')[0]);
                     software -= parseInt(answersArr[i].split('|')[1].toString().split(',')[0]);
                     design -= parseInt(answersArr[i].split('|')[1].toString().split(',')[1]);
                     marketing -= parseInt(answersArr[i].split('|')[1].toString().split(',')[2]);
-                    answersArr.splice(answersArr[i]);
+                    console.log(answersArr);
+                    answersArr.splice(i, 1);
                 }
             }
-            
-        
+
             answersArr.push(event.target.name.toString() + `|${selectedValue}`);
-            software += parseInt(selectedValue[0]);
-            design += parseInt(selectedValue[1]);
-            marketing += parseInt([2]);
+            software += parseInt(selectedValue.split(',')[0]);
+            design += parseInt(selectedValue.split(',')[1]);
+            marketing += parseInt(selectedValue.split(',')[2]);
+            console.log(answersArr);
 
             console.log(software);
+            console.log(design);
+            console.log(marketing);
             // You can now use 'selectedValue' as needed, such as storing it in a variable or sending it to a server.
         });
     });

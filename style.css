@@ -6,6 +6,17 @@ h4 {
     color: grey;
     font-weight: 500;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    /* Add some spacing between radio buttons */
+}
+
+/* Style for spacing between the radio button and text */
+input[type="radio"] {
+    margin-right: 5px;
+}
 /* Style for the label to position text on the right of the radio button */
 .radio-component label {
     display: block;

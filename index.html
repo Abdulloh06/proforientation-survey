@@ -6,19 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Style for the label to position text on the right of the radio button */
-        label {
-            display: block;
-            margin-bottom: 10px;
-            /* Add some spacing between radio buttons */
-        }
-
-        /* Style for spacing between the radio button and text */
-        input[type="radio"] {
-            margin-right: 5px;
-        }
-    </style>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 
@@ -35,19 +22,27 @@
 </body>
 
 <script>
-    let tg = window.Telegram.WebApp; 
+    let tg = window.Telegram.WebApp;
 
     tg.expand(); //расширяем на все окно  
 
     let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
     btnED.addEventListener('click', function () {
+
         //вешаем событие на нажатие html-кнопки
         const data = answersArr;
-        console.log(data);
-        if(answersArr.lenght == 20) {
-            tg.sendData(`${software}, ${design}, ${marketing}`);
+        const soft = software;
+        const des = design;
+        const mar = marketing;
+        console.log(data.length);
+        console.log(data.length == 20);
+        if (data.length == 20) {
+            console.log(data);
+            tg.sendData(`${soft}, ${des}, ${mar}`);
+        } else {
+            console.log("error");
         }
-        
+
     });
 
 </script>
