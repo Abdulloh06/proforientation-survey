@@ -9,11 +9,12 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 
+
 <body>
 
-    <h2>Kasbga yo'naltirish testi</h2>
+    <h2 id='job'>Kasbga yo'naltirish testi</h2>
 
-    <h4>20 ta savolga javob bering va qaysi kasb sizga mos kelishini bilib oling.</h4>
+    <h4 id='description'>20 ta savolga javob bering va qaysi kasb sizga mos kelishini bilib oling.</h4>
 
     <div id="radioContainer"></div>
 
@@ -21,12 +22,24 @@
     <script src="radio_controller.js"></script>
 </body>
 
+
 <script>
+
+    let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
+    let job = document.getElementById('job');
+    let description = document.getElementById('description');
+
+    const lang = window.location.search;
+    if(lang.includes('ru')) {
+        job.textContent = 'Тест на профориентацию'
+        description.textContent = 'Ответьте на 20 вопросов и узнайте, какая профессия вам подходит.'
+        btnED.textContent = 'Получить результаты'
+    }
+
     let tg = window.Telegram.WebApp;
 
     tg.expand(); //расширяем на все окно  
 
-    let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
     btnED.addEventListener('click', function () {
 
         //вешаем событие на нажатие html-кнопки
