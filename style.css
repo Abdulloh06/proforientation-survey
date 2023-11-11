@@ -25,3 +25,17 @@ h4 {
     font-size: 18px; /* Adjust the font size of the question */
     font-weight: bold; /* Make the question text bold */
 }
+
+.button {
+    background: purple;
+    border: none;
+    color: purple;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }

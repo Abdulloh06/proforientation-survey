@@ -137,6 +137,50 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Intuitsia|1,1,2",
             ]
         },
+        {
+            question: "16) Tehnik korgazmada men etibor beraman:",
+            options: [
+                "eksponatlarning tashqi ko'rinishi, qanday ko'rinishi haqida|1,3,1",
+                "eksponatlarning ichki tuzilishi bo'yicha|3,1,1",
+                "ularni qanday qo'llash mumkinligi haqida|1,1,1",
+            ]
+        },
+        {
+            question: "17) Men qila olmayman va yoqtirmayman:",
+            options: [
+                "odamlarga moslashtirilinish, xushomad bo'lish|1,1,1",
+                "ishontirish, o'z fikrini majburlash|1,1,1",
+                "boshqa odamlarni nazorat qilish, ishni tekshirish|1,1,1",
+            ]
+        },
+        {
+            question: "18) Menha yaqinroq:",
+            options: [
+                "buyurtma, aniq vazifalar va ko'rsatmalar, ishonch|2,1,2",
+                "chegaralar va standartlardan tashqariga chiqish imkoniyati, ijodiy buzuqlik, spontanlik|1,2,1",
+            ]
+        },
+        {
+            question: "19) Menga ko'proq mos keladigan Moliyaviy motivatsiya:",
+            options: [
+                "ish haqi va ko'rsatkichlarga erishish uchun premialar|1,1,2",
+                "beqaror, lekin hech kim bilan cheklanmagan daromad biznesingiz|1,1,1",
+                "kam oylik va sotishning yuqori foizi|1,1,1",
+                "asta-sekin o'sib borayotgan barqaror ish haqi xizmat muddati va tajribasi|3,1,2",
+            ]
+        },
+        {   
+            question: "20) Siz qanday ijtimoiy tarmoqlarsiz afzal va faol hisoblaringiz bor:",
+            options: [
+                "Twitter|1,1,1",
+                "ВКонтакте|1,1,2",
+                "Facebook|1,1,2",
+                "Instagram|1,3,3",
+                "LinkedIn|2,1,1",
+                "Pinterest|1,3,1",
+                "ijtimoiy tarmoqlardan umuman foydalanmayman|1,1,1"
+            ]
+        },
         // Add more questions and options as needed
     ];
 
