@@ -366,9 +366,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionsData = []
 
     if(lang.includes('ru')) {
-        questionsData = questionsUz;
-    } else {
         questionsData = questionsRu;
+    } else {
+        questionsData = questionsUz;
     }
 
     const radioContainer = document.getElementById('radioContainer');
