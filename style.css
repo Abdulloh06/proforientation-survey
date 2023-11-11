@@ -1,0 +1,27 @@
+body {
+    background: white;
+}
+
+h4 {
+    color: grey;
+    font-weight: 500;
+}
+/* Style for the label to position text on the right of the radio button */
+.radio-component label {
+    display: block;
+    margin-bottom: 10px; /* Add some spacing between radio buttons */
+    font-size: 16px; /* Adjust the font size of the text */
+}
+
+/* Style for spacing between the radio button and text */
+.radio-component input[type="radio"] {
+    margin-right: 8px; /* Increase the margin for better spacing */
+    width: 20px; /* Adjust the width of the radio button */
+    height: 20px; /* Adjust the height of the radio button */
+}
+
+/* Style for the question text */
+.radio-component .question {
+    font-size: 18px; /* Adjust the font size of the question */
+    font-weight: bold; /* Make the question text bold */
+}
