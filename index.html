@@ -44,7 +44,10 @@
         //вешаем событие на нажатие html-кнопки
         const data = answersArr;
         console.log(data);
-        tg.sendData("some string that we need to send");
+        if(answersArr.lenght == 20) {
+            tg.sendData(`${software}, ${design}, ${marketing}`);
+        }
+        
     });
 
 </script>
