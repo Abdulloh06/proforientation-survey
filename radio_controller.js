@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let questionsData = []
 
-    if(lang.includes('uz')) {
+    if(lang.includes('ru')) {
         questionsData = questionsUz;
     } else {
         questionsData = questionsRu;
@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const selectedValue = event.target.value;
             console.log(`Selected value: ${selectedValue}`);
             for (let i = 0; i < answersArr.length; i++) {
-                if (answersArr[i].includes(event.target.name.toString())) {
+                if (answersArr[i].split('|')[0].toString() == event.target.name.toString()) {
                     console.log(answersArr);
                     software -= parseInt(answersArr[i].split('|')[1].toString().split(',')[0]);
                     design -= parseInt(answersArr[i].split('|')[1].toString().split(',')[1]);
